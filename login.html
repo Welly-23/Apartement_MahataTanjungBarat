@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="login-page">
+    <div class="login-card">
+        <h2>Samesta Admin</h2>
+        <p>Masuk untuk mengelola data booking.</p>
+
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+
+        <button onclick="login()">Masuk</button>
+    </div>
+</section>
+
+<section class="room-detail">
+    <div class="room-gallery">
+        <button onclick="prevRoomImage('studio')">‹</button>
+        <img id="studioImage" src="images/studio-1.jpg" alt="Studio Room">
+        <button onclick="nextRoomImage('studio')">›</button>
+    </div>
+
+    <div class="room-info">
+        <span>Studio Room</span>
+        <h2>Hunian Compact yang Elegan dan Nyaman</h2>
+        <p>
+            Studio Room cocok untuk penghuni yang menginginkan ruang praktis,
+            modern, dan tetap nyaman. Desainnya dibuat efisien agar aktivitas
+            harian tetap terasa mudah.
+        </p>
+
+        <ul>
+            <li>24 m²</li>
+            <li>1 Kamar</li>
+            <li>1 Kamar Mandi</li>
+            <li>Mulai Rp 500 Jt</li>
+        </ul>
+
+        <a href="index.html#booking">Jadwalkan Kunjungan</a>
+    </div>
+</section>
+
+<script src="login.js"></script>
+
+</body>
+</html>

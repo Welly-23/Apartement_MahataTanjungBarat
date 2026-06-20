@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title></title>
+
+    <link rel="icon" type="image/png" href="images/logo-samesta.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">
+    <img src="images/logo-samesta.png" alt="Logo">
+</div>
+
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#about">Tentang</a></li>
+    <li><a href="#rooms">Tipe Kamar</a></li>
+    <li><a href="lokasi.html">Lokasi</a></li>
+    <li><a href="#kontak">Kontak</a></li>
+</ul>
+</nav>
+
+<section class="hero reveal reveal-zoom">
+    <div class="hero-dark"></div>
+
+    <div class="hero-content">
+        <p class="hero-subtitle">SAMESTA MAHATA TANJUNG BARAT</p>
+
+        <h1>
+            Apartement Modern<br>
+            Di jakarta Selatan
+        </h1>
+
+        <a href="#booking" class="hero-main-btn">
+            BOOKING SEKARANG
+        </a>
+    </div>
+</section>
+
+<section class="tod-section reveal">
+
+    <div class="tod-left">
+        <span class="tod-subtitle">
+            EXPERIENCE MODERN LIVING
+        </span>
+
+        <h2>
+            HUNIAN TOD <br>DI JAKARTA SELATAN
+        </h2>
+    </div>
+
+    <div class="tod-right">
+       <p>
+    <strong>Apartement Mahata Tanjung Barat</strong> merupakan apartemen modern yang mengutamakan
+    kenyamanan, aksesibilitas, dan kualitas hidup. Dengan lokasi premium di
+    Jakarta Selatan serta fasilitas unggulan yang mendukung aktivitas sehari-hari,
+    Apartement Mahata Tanjung Barat menghadirkan hunian yang ideal untuk tinggal maupun investasi.
+        </p>
+    </div>
+
+</section>
+
+<section class="about reveal" id="about">
+    <div class="about-wrapper">
+        <div class="about-text">
+            <span class="section-label">Tentang Mahata Tanjung Barat</span>
+            <h2>Hunian TOD di Jakarta Selatan</h2>
+
+            <p>
+                Apartemen Samesta Mahata Tanjung Barat hunian apartemen modern yang dirancang untuk
+                memenuhi kebutuhan gaya hidup masyarakat urban. Berlokasi di kawasan
+                strategis Jakarta Selatan, AparHouse menawarkan akses mudah menuju
+                pusat bisnis, fasilitas pendidikan, pusat perbelanjaan, rumah sakit,
+                serta transportasi umum.
+            </p>
+
+        </div>
+
+        <div class="about-image">
+            <img src="mahata.jpg" alt="Apartment Building">
+        </div>
+    </div>
+
+    <div class="about-info">
+
+    <div class="feature-card reveal reveal-up" style="--delay:.1s">
+        <img src="Gedung.jpg">
+
+        <div class="feature-overlay">
+            <h3>Lokasi Strategis</h3>
+            <p>Dekat stasiun, pusat bisnis, dan pusat perbelanjaan.</p>
+        </div>
+    </div>
+
+    <div class="feature-card reveal reveal-up" style="--delay:.2s">
+        <img src="Hunian.jpg">
+
+        <div class="feature-overlay">
+            <h3>Hunian Modern</h3>
+            <p>Desain premium dan nyaman untuk keluarga.</p>
+        </div>
+    </div>
+
+    <div class="feature-card reveal reveal-up" style="--delay:.4s">
+        <img src="aksebilitas.jpg">
+
+        <div class="feature-overlay">
+            <h3>Aksesbilitas tinggi</h3>
+            <p>Mobilitas yang cepat dan nyaman untuk aktivitas sehari-hari.</p>
+        </div>
+    </div>
+
+</div>
+</section>
+
+<section class="unit-section reveal" id="rooms">
+    <div class="unit-highlight">
+
+        <div class="unit-main-image">
+            <img
+                id="unitImage"
+                src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200"
+                alt="Unit Apartemen"
+            >
+
+          <div class="slide-dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<div class="slider-controls">
+    <button onclick="prevUnit()">‹</button>
+    <button onclick="nextUnit()">›</button>
+</div>
+
+        </div>
+
+        <div class="unit-main-content">
+            <span class="unit-label">PILIHAN UNIT</span>
+
+            <h3 id="unitTitle">Studio Room</h3>
+
+            <p id="unitDesc">
+                Unit studio modern yang dirancang untuk kenyamanan sehari-hari, dengan tata ruang efisien dan suasana yang hangat.
+            </p>
+
+            <div class="unit-points">
+                <span id="unitSize">24 m²</span>
+                <span id="unitBedroom">1 Kamar</span>
+                <span id="unitBathroom">1 KM</span>
+            </div>
+
+            <h4 id="unitPrice">Mulai Rp 600 Jt</h4>
+
+           <a href="#" class="unit-main-btn" onclick="scrollBooking(event)">Jadwalkan Kunjungan</a>
+           <a href="detail-unit.html" id="detailBtn" class="unit-detail-btn">Detail Unit</a>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section class="facilities-photo reveal">
+
+    <h2>Fasilitas Unggulan</h2>
+
+    <div class="facility-photo-grid">
+
+        <div class="facility-photo-card reveal reveal-up"
+     style="--delay:.1s; background-image:url('./images/kolam anak.jpg')">
+            <div class="facility-overlay">
+                <h3>Kolam Renang</h3>
+            </div>
+        </div>
+
+        <div class="facility-photo-card reveal reveal-up"
+     style="--delay:.25s; background-image:url('./images/gym.jpg')">
+            <div class="facility-overlay">
+                <h3>Gym Center</h3>
+            </div>
+        </div>
+
+        <div class="facility-photo-card reveal reveal-up"
+     style="--delay:.4s; background-image:url('./images/parkir.jpg')">
+            <div class="facility-overlay">
+                <h3>Parkir Luas</h3>
+            </div>
+        </div>
+
+        <div class="facility-photo-card reveal reveal-up"
+     style="--delay:.55s; background-image:url('./images/taman bermain.jpg')">
+            <div class="facility-overlay">
+                <h3>taman Bermain</h3>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<div id="booking-target"></div>
+
+<section class="booking booking-pro reveal" id="booking">
+    <div class="booking-container">
+
+        <div class="booking-left">
+            <span class="booking-tag">RESERVASI UNIT</span>
+
+            <h2 class="booking-title">
+                Kunjungi <br>
+                Unit pilihan anda
+            </h2>
+
+            <form id="bookingForm">
+                <input type="text" id="nama" placeholder="Nama Lengkap" required>
+                <input type="text" id="nomor_hp" placeholder="Nomor HP" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="date" id="tanggal" required>
+
+            <select id="tipe_unit" required>
+                 <option value="">Pilih Tipe Unit</option>
+                 <option value="Studio Room">Studio Room</option>
+                <option value="One Bedroom">One Bedroom</option>
+                <option value="Two Bedroom">Two Bedroom</option>
+            </select>
+
+                <button type="submit">Kirim Jadwal</button>
+            </form>
+        </div>
+
+        <div class="booking-right">
+   <img class="booking-building" src="apartemen mahata.png" alt="Apartemen">
+
+    <div class="booking-logo-row">
+        <img src="images/logo bumn.png" alt="BUMN">
+        <img src="images/logo perumnas.png" alt="Perumnas">
+    </div>
+</div>
+</section> 
+
+<footer class="footer" id="kontak">
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h2>Apartement Mahata Tanjung Barat</h2>
+            <p>
+                Merupakan hunian modern yang berada di lokasi strategis
+                Jakarta Selatan dengan akses mudah menuju pusat bisnis, kampus,
+                rumah sakit, dan transportasi umum.
+            </p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Kontak</h3>
+            <p>+62 813 8543 7173</p>
+            <p>sellyalfalfa@gmail.com</p>
+            <p>Jl. Raya Lenteng Agung No.55, Jakarta Selatan</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Jam Operasional</h3>
+            <p>Senin - Minggu</p>
+            <p>09:00 - 18:00 WIB</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Ikuti Kami</h3>
+
+            <div class="social-icons">
+                <a href="https://www.instagram.com/selly_mahatatanjungbarat?igsh=MWs4cTR6MDJ2c3ppdA==" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://www.tiktok.com/@mahata.tanjung.ba2?_r=1&_t=ZS-97Is2Tjy6k6" target="_blank">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+
+                <a href="https://wa.me/6281385437173" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Apartement Mahata Tanjung Barat. All Rights Reserved.
+    </div>
+</footer>
+
+<a href="https://wa.me/6281385437173" class="whatsapp-float" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>

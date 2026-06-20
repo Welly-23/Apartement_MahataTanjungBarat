@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Samesta</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        if(localStorage.getItem("adminLogin") !== "true"){
+            window.location.href = "login.html";
+        }
+    </script>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Samesta Admin</div>
+
+    <ul>
+        <li><a href="index.html">Website</a></li>
+        <li><a href="admin.html">Dashboard</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+    </ul>
+</nav>
+
+<section class="admin">
+    <h2>Dashboard Booking Apartement</h2>
+
+    <input
+        type="text"
+        id="searchInput"
+        class="search-box"
+        placeholder="Cari nama, nomor HP, atau email..."
+    >
+
+    <button onclick="exportExcel()" class="export-btn">
+        Export Excel
+    </button>
+
+    <div class="stats-container">
+        <div class="stat-card">
+            <h3>Total Booking</h3>
+            <p id="totalBooking">0</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Booking Hari Ini</h3>
+            <p id="todayBooking">0</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Booking Bulan Ini</h3>
+            <p id="monthBooking">0</p>
+        </div>
+    </div>
+
+    <div class="chart-card">
+        <h3>Grafik Booking Berdasarkan Tipe Unit</h3>
+        <canvas id="unitChart"></canvas>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>No HP</th>
+                <th>Email</th>
+                <th>Tanggal Kunjungan</th>
+                <th>Tipe Unit</th>
+                <th>Status</th>
+                <th>Waktu Booking</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+
+        <tbody id="bookingTable"></tbody>
+    </table>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="admin.js"></script>
+
+</body>
+</html>
