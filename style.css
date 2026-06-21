@@ -4263,3 +4263,48 @@ body {
     display: block !important;
   }
 }
+
+/* FIX INDEX MOBILE BENERAN */
+@media (max-width: 768px) {
+
+  .about-wrapper {
+    flex-direction: column !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    gap: 25px !important;
+  }
+
+  .about-text {
+    flex: none !important;
+    width: 100% !important;
+  }
+
+  .about-image {
+    width: 100% !important;
+  }
+
+  .about-image img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .about-info {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 22px !important;
+  }
+
+  .feature-card {
+    width: 100% !important;
+  }
+
+  .unit-highlight {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .unit-main-image,
+  .unit-main-content {
+    width: 100% !important;
+  }
+}
