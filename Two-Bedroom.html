@@ -26,7 +26,7 @@
     </ul>
 </nav>
 
-<section class="detail-hero">
+<section class="detail-hero two-hero">
     <div class="hero-overlay"></div>
 
     <div class="hero-content">
@@ -51,20 +51,19 @@
             <h3>Fasilitas Unit</h3>
 
             <div class="facilities-list">
-                <span><i class="fas fa-wifi"></i> WiFi</span>
                 <span><i class="fas fa-snowflake"></i> AC</span>
                 <span><i class="fas fa-kitchen-set"></i> Dapur</span>
                 <span><i class="fas fa-shower"></i> Shower</span>
                 <span><i class="fas fa-tv"></i> Smart TV</span>
                 <span><i class="fas fa-bed"></i> 2 Kamar Tidur</span>
-                <span><i class="fas fa-couch"></i> Ruang Keluarga</span>
+                <span><i class="fas fa-door-open"></i> Balcony</span>
             </div>
         </div>
     </div>
 
     <div class="detail-gallery">
         <button onclick="prevRoomImage('two')">‹</button>
-        <img id="twoImage" src="two-bedroom.jpg" alt="Two Bedroom">
+        <img id="twoImage" src="Two Bedroom/Two-bedroom-1.jpg" alt="Two Bedroom">
         <button onclick="nextRoomImage('two')">›</button>
     </div>
 </section>
@@ -85,10 +84,11 @@
     <div class="gallery-content" id="tour">
         <div class="tour-layout">
             <div class="tour-text">
-                <h4>Family Space</h4>
+                <h4>Family Comfort</h4>
                 <p>
-                    A wider room layout
-                    for better daily living.
+                    A spacious layout
+                    designed for families
+                    and shared living.
                 </p>
             </div>
 
@@ -99,17 +99,18 @@
             </div>
 
             <div class="tour-text">
-                <h4>Warm Comfort</h4>
+                <h4>Extra Space</h4>
                 <p>
-                    Designed for family
-                    moments and privacy.
+                    More room for
+                    relaxation, productivity,
+                    and quality time.
                 </p>
             </div>
         </div>
     </div>
 </section>
 
-<section class="unit-cta">
+<section class="unit-cta two-cta">
     <div class="cta-content">
         <span>APARTMENT TWO BEDROOM</span>
 
@@ -136,7 +137,7 @@
     <div class="related-grid">
 
         <div class="related-card">
-            <img src="Hunian.jpg" alt="Studio Room">
+            <img src="Studio Room/Studio-room-2.jpg" alt="Studio Room">
 
             <div class="related-content">
                 <h3>Studio Room</h3>
@@ -150,7 +151,7 @@
         </div>
 
         <div class="related-card">
-            <img src="one-bedroom.jpg" alt="One Bedroom">
+            <img src="One Bedroom/One-bedroom-3.jpg" alt="One Bedroom">
 
             <div class="related-content">
                 <h3>One Bedroom</h3>
@@ -222,5 +223,30 @@
 </a>
 
 <script src="script.js"></script>
+
+<script>
+let currentTwo = 0;
+
+const twoImages = [
+  "Two Bedroom/Two-bedroom-1.jpg",
+  "Two Bedroom/Two-bedroom-4.jpg",
+  "Two Bedroom/Two-bedroom-2.jpg"
+];
+
+function showTwoImage() {
+  document.getElementById("twoImage").src = twoImages[currentTwo];
+}
+
+function nextRoomImage() {
+  currentTwo = (currentTwo + 1) % twoImages.length;
+  showTwoImage();
+}
+
+function prevRoomImage() {
+  currentTwo = (currentTwo - 1 + twoImages.length) % twoImages.length;
+  showTwoImage();
+}
+</script>
+
 </body>
 </html>

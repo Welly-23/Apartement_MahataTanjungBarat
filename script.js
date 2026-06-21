@@ -37,32 +37,32 @@ form.addEventListener("submit", async (e) => {
 const units = [
     {
         title: "Studio Room",
-        desc: "Unit studio modern yang dirancang untuk kenyamanan sehari-hari, dengan tata ruang efisien dan suasana yang hangat.",
+        desc: "Unit Studio Room dirancang untuk memberikan kenyamanan maksimal bagi penghuni yang menginginkan hunian praktis dan modern. Dengan tata ruang yang efisien, pencahayaan alami yang baik, serta desain interior yang elegan.",
         size: "23 m²",
         bedroom: "1 Kamar",
-        bathroom: "1 KM",
+        bathroom: "Balcony",
         price: "Mulai Rp 600 Jt",
-        image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200",
+        image: "Studio Room/Studio-room-2.jpg",
         link: "detail-unit.html"
     },
     {
         title: "One Bedroom",
-        desc: "Hunian ideal dengan ruang yang lebih luas, menghadirkan kenyamanan dan privasi untuk aktivitas sehari-hari.",
+        desc: "Unit One Bedroom menawarkan ruang yang lebih luas dengan pemisahan area kamar tidur dan ruang utama untuk menciptakan privasi yang lebih baik. Dilengkapi desain modern, sirkulasi udara yang optimal, dan tata ruang yang fungsional.",
         size: "35 m²",
         bedroom: "1 Kamar",
-        bathroom: "1 KM",
+        bathroom: "Balcony",
         price: "Mulai Rp 1 M",
-        image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200",
+        image: "One Bedroom/One-bedroom-3.jpg",
          link: "One-Bedroom.html"
     },
     {
         title: "Two Bedroom",
-        desc: "Unit luas dengan dua kamar tidur yang nyaman, cocok untuk keluarga kecil maupun kebutuhan ruang yang lebih fleksibel.",
+        desc: "Unit Two Bedroom menghadirkan ruang yang lebih lapang untuk mendukung kebutuhan keluarga maupun penghuni yang membutuhkan ruang tambahan. Dengan dua kamar tidur yang nyaman.",
         size: "45 m²",
         bedroom: "2 Kamar",
-        bathroom: "1 KM",
+        bathroom: "Balcony",
         price: "Mulai Rp 1,2 M",
-        image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200",
+        image: "Two Bedroom/Two-bedroom-5.jpg",
         link: "Two-Bedroom.html"
     }
 ];

@@ -26,7 +26,7 @@
     </ul>
 </nav>
 
-<section class="detail-hero">
+<section class="detail-hero one-hero">
     <div class="hero-overlay"></div>
 
     <div class="hero-content">
@@ -51,13 +51,13 @@
             <h3>Fasilitas Unit</h3>
 
             <div class="facilities-list">
-                <span><i class="fas fa-wifi"></i> WiFi</span>
                 <span><i class="fas fa-snowflake"></i> AC</span>
                 <span><i class="fas fa-kitchen-set"></i> Dapur</span>
                 <span><i class="fas fa-shower"></i> Shower</span>
                 <span><i class="fas fa-tv"></i> Smart TV</span>
-                <span><i class="fas fa-bed"></i> Tempat Tidur</span>
+                <span><i class="fas fa-bed"></i> 1 Tempat Tidur</span>
                 <span><i class="fas fa-couch"></i> Sofa</span>
+                <span><i class="fas fa-door-open"></i> Balcony</span>
             </div>
         </div>
 
@@ -65,7 +65,7 @@
 
    <div class="detail-gallery">
     <button onclick="prevRoomImage('one')">‹</button>
-    <img id="oneImage" src="one-bedroom.jpg" alt="One Bedroom">
+    <img id="oneImage" src="One Bedroom/One-bedroom-5.jpg" alt="One Bedroom">
     <button onclick="nextRoomImage('one')">›</button>
 </div>
 </section>
@@ -88,10 +88,11 @@
     <div class="tour-layout">
 
         <div class="tour-text">
-            <h4>Refined Space</h4>
+            <h4>Private Comfort</h4>
              <p>
-                A calm studio designed
-                for effortless living.
+            A spacious one bedroom
+            designed for privacy,
+            comfort, and everyday living.
         </p>
         </div>
 
@@ -102,10 +103,11 @@
         </div>
 
        <div class="tour-text">
-    <h4>Modern Comfort</h4>
+    <h4>Elegant Living</h4>
     <p>
-        Where every corner feels
-        warm and functional.
+            Thoughtfully designed
+            spaces that balance
+            style and functionality.
     </p>
 </div>
 
@@ -114,7 +116,7 @@
 </div>
 </section>
 
-<section class="unit-cta">
+<section class="unit-cta one-cta">
 
    <div class="cta-content">
     <span>APARTMENT ONE BEDROOM</span>
@@ -143,7 +145,7 @@
     <div class="related-grid">
 
         <div class="related-card">
-            <img src="Hunian.jpg" alt="Studio Room">
+            <img src="Studio Room/Studio-room-2.jpg" alt="Studio Room">
 
             <div class="related-content">
                 <h3>Studio Room</h3>
@@ -157,7 +159,7 @@
         </div>
 
         <div class="related-card">
-            <img src="two-bedroom.jpg" alt="Two Bedroom">
+            <img src="Two Bedroom/Two-bedroom-5.jpg" alt="Two Bedroom">
 
             <div class="related-content">
                 <h3>Two Bedroom</h3>
@@ -230,5 +232,30 @@
 </a>
 
 <script src="script.js"></script>
+
+<script>
+let currentOne = 0;
+
+const oneImages = [
+  "One Bedroom/One-bedroom-1.jpg",
+  "One Bedroom/One-bedroom-5.jpg",
+  "One Bedroom/One-bedroom-2.jpg",
+];
+
+function showOneImage() {
+  document.getElementById("oneImage").src = oneImages[currentOne];
+}
+
+function nextRoomImage() {
+  currentOne = (currentOne + 1) % oneImages.length;
+  showOneImage();
+}
+
+function prevRoomImage() {
+  currentOne = (currentOne - 1 + oneImages.length) % oneImages.length;
+  showOneImage();
+}
+</script>
+
 </body>
 </html>

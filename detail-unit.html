@@ -26,7 +26,7 @@
     </ul>
 </nav>
 
-<section class="detail-hero">
+<section class="detail-hero studio-hero">
     <div class="hero-overlay"></div>
 
     <div class="hero-content">
@@ -51,13 +51,13 @@
             <h3>Fasilitas Unit</h3>
 
             <div class="facilities-list">
-                <span><i class="fas fa-wifi"></i> WiFi</span>
                 <span><i class="fas fa-snowflake"></i> AC</span>
                 <span><i class="fas fa-kitchen-set"></i> Dapur</span>
                 <span><i class="fas fa-shower"></i> Shower</span>
                 <span><i class="fas fa-tv"></i> Smart TV</span>
                 <span><i class="fas fa-bed"></i> Tempat Tidur</span>
                 <span><i class="fas fa-couch"></i> Sofa</span>
+                <span><i class="fas fa-door-open"></i> Balcony</span>
             </div>
         </div>
 
@@ -65,7 +65,7 @@
 
     <div class="detail-gallery">
         <button onclick="prevRoomImage('studio')">‹</button>
-        <img id="studioImage" src="Hunian.jpg" alt="Studio Room">
+        <img id="studioImage" src="Studio Room/Studio-room-1.jpg" alt="Studio Room">
         <button onclick="nextRoomImage('studio')">›</button>
     </div>
 </section>
@@ -88,10 +88,11 @@
     <div class="tour-layout">
 
         <div class="tour-text">
-            <h4>Refined Space</h4>
+            <h4>Smart Living</h4>
              <p>
-                A calm studio designed
-                for effortless living.
+                Compact design that
+                maximizes comfort
+                and functionality.
         </p>
         </div>
 
@@ -102,10 +103,11 @@
         </div>
 
        <div class="tour-text">
-    <h4>Modern Comfort</h4>
+    <h4>Modern Lifestyle</h4>
     <p>
-        Where every corner feels
-        warm and functional.
+        A cozy environment
+        tailored for urban
+        everyday living.
     </p>
 </div>
 
@@ -114,7 +116,7 @@
 </div>
 </section>
 
-<section class="unit-cta">
+<section class="unit-cta studio-cta">
 
     <div class="cta-content">
         <span>APARTMENT STUDIO ROOM</span>
@@ -145,7 +147,7 @@
     <div class="related-grid">
 
         <div class="related-card">
-            <img src="one-bedroom.jpg" alt="One Bedroom">
+             <img src="One Bedroom/One-bedroom-3.jpg" alt="One Bedroom">
 
             <div class="related-content">
                 <h3>One Bedroom</h3>
@@ -159,7 +161,7 @@
         </div>
 
         <div class="related-card">
-            <img src="two-bedroom.jpg" alt="Two Bedroom">
+            <img src="Two Bedroom/Two-bedroom-5.jpg" alt="Two Bedroom">
 
             <div class="related-content">
                 <h3>Two Bedroom</h3>
@@ -232,5 +234,30 @@
 </a>
 
 <script src="script.js"></script>
+
+<script>
+let currentStudio = 0;
+
+const studioImages = [
+  "Studio Room/Studio-room-1.jpg",
+  "Studio Room/Studio-room-3.jpg",
+  "Studio Room/Studio-room-4.jpg"
+];
+
+function showStudioImage() {
+  document.getElementById("studioImage").src = studioImages[currentStudio];
+}
+
+function nextRoomImage() {
+  currentStudio = (currentStudio + 1) % studioImages.length;
+  showStudioImage();
+}
+
+function prevRoomImage() {
+  currentStudio = (currentStudio - 1 + studioImages.length) % studioImages.length;
+  showStudioImage();
+}
+</script>
+
 </body>
 </html>
