@@ -4186,3 +4186,80 @@ body {
     bottom: 18px !important;
   }
 }
+
+@media (max-width: 900px) {
+
+  body {
+    overflow-x: hidden !important;
+  }
+
+  #about,
+  #rooms,
+  .unit-section {
+    padding: 50px 22px !important;
+  }
+
+  #about .about-wrapper {
+    display: block !important;
+  }
+
+  #about .about-text,
+  #about .about-image {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  #about .about-image {
+    margin-top: 28px !important;
+  }
+
+  #about .about-image img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  #about .about-info {
+    display: block !important;
+  }
+
+  #about .feature-card {
+    width: 100% !important;
+    height: 280px !important;
+    margin-bottom: 22px !important;
+  }
+
+  #rooms .unit-highlight {
+    display: block !important;
+    grid-template-columns: none !important;
+  }
+
+  #rooms .unit-main-image,
+  #rooms .unit-main-content {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  #rooms .unit-main-image img {
+    width: 100% !important;
+    height: 320px !important;
+    object-fit: cover !important;
+  }
+
+  #rooms .unit-main-content {
+    padding: 35px 24px !important;
+  }
+
+  #rooms .unit-main-content h3 {
+    font-size: 38px !important;
+  }
+
+  #rooms .unit-main-content h4 {
+    font-size: 32px !important;
+  }
+
+  #rooms .unit-main-btn,
+  #rooms .unit-detail-btn {
+    width: 100% !important;
+    display: block !important;
+  }
+}
