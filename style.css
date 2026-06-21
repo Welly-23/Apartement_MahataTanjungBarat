@@ -3762,3 +3762,285 @@ body {
     font-size: 38px !important;
   }
 }
+
+/* ===== MOBILE TOTAL FIX ALL PAGE ===== */
+@media (max-width: 768px) {
+
+  html, body {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  * {
+    box-sizing: border-box !important;
+  }
+
+  body {
+    font-size: 16px !important;
+  }
+
+  section {
+    width: 100% !important;
+    padding: 55px 22px !important;
+  }
+
+  /* NAVBAR MOBILE */
+  nav,
+  .detail-navbar {
+    width: 100% !important;
+    height: auto !important;
+    padding: 22px 18px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 18px !important;
+  }
+
+  nav ul,
+  .detail-navbar ul {
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 16px 22px !important;
+    padding: 0 !important;
+  }
+
+  nav ul li a,
+  .detail-navbar ul li a {
+    font-size: 14px !important;
+  }
+
+  .logo img,
+  .detail-logo img {
+    width: 92px !important;
+  }
+
+  /* HOME HERO JADI MOBILE */
+  .hero {
+    height: 100vh !important;
+    min-height: 680px !important;
+    padding: 0 24px !important;
+    background-position: center center !important;
+  }
+
+  .hero-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    padding-top: 60px !important;
+  }
+
+  .hero-content span {
+    font-size: 11px !important;
+    letter-spacing: 4px !important;
+  }
+
+  .hero-content h1 {
+    font-size: 38px !important;
+    line-height: 1.15 !important;
+  }
+
+  .hero-content a {
+    padding: 14px 28px !important;
+    font-size: 13px !important;
+  }
+
+  /* SEMUA LAYOUT JADI VERTIKAL */
+  .about-wrapper,
+  .about-info,
+  .unit-highlight,
+  .facility-photo-grid,
+  .booking-container,
+  .footer-container,
+  .detail-content,
+  .detail-overview,
+  .detail-wrapper,
+  .unit-detail-wrapper,
+  .gallery-wrapper,
+  .related-grid,
+  .lokasi-container,
+  .lokasi-wrapper,
+  .location-container,
+  .location-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 28px !important;
+  }
+
+  .about-text,
+  .about-image,
+  .unit-main-image,
+  .unit-main-content,
+  .booking-left,
+  .booking-right,
+  .footer-box,
+  .detail-text,
+  .detail-image,
+  .gallery-text,
+  .gallery-video,
+  .lokasi-text,
+  .lokasi-map,
+  .location-text,
+  .location-map,
+  .map-box {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* FONT MOBILE */
+  h1, h2, h3 {
+    word-break: normal !important;
+  }
+
+  .about-text h2,
+  .booking-title,
+  .unit-main-content h3,
+  .lokasi-text h1,
+  .location-text h1 {
+    font-size: 34px !important;
+    line-height: 1.2 !important;
+  }
+
+  .detail-text h1,
+  .detail-text h2 {
+    font-size: 36px !important;
+    line-height: 1.15 !important;
+  }
+
+  p {
+    font-size: 15px !important;
+    line-height: 1.75 !important;
+  }
+
+  /* GAMBAR/VIDEO/IFRAME IKUT HP */
+  img,
+  video,
+  iframe {
+    max-width: 100% !important;
+  }
+
+  .about-image img,
+  .unit-main-image img,
+  .booking-building,
+  .detail-image img,
+  .gallery-video video,
+  iframe {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 360px !important;
+    object-fit: cover !important;
+    border-radius: 18px !important;
+  }
+
+  iframe {
+    height: 320px !important;
+  }
+
+  /* CARD */
+  .feature-card,
+  .facility-photo-card,
+  .related-card,
+  .lokasi-card,
+  .location-card {
+    width: 100% !important;
+    height: 280px !important;
+  }
+
+  /* UNIT SECTION */
+  .unit-main-content {
+    padding: 34px 24px !important;
+  }
+
+  .unit-main-content h4 {
+    font-size: 32px !important;
+  }
+
+  .unit-main-btn,
+  .unit-detail-btn,
+  form button {
+    width: 100% !important;
+    display: block !important;
+    text-align: center !important;
+  }
+
+  /* BOOKING */
+  form input,
+  form select,
+  form button {
+    width: 100% !important;
+    font-size: 15px !important;
+  }
+
+  /* DETAIL HERO */
+  .detail-hero {
+    height: 70vh !important;
+    min-height: 520px !important;
+    padding: 0 22px !important;
+  }
+
+  .detail-hero h1 {
+    font-size: 48px !important;
+    line-height: 1.05 !important;
+  }
+
+  .detail-hero p {
+    font-size: 18px !important;
+  }
+
+  /* FACILITY TAGS */
+  .facility-list,
+  .unit-facilities,
+  .facility-tags {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+  }
+
+  .facility-list span,
+  .facility-tags span {
+    font-size: 14px !important;
+    padding: 12px 18px !important;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 55px 24px 35px !important;
+  }
+
+  .footer-box {
+    text-align: left !important;
+  }
+
+  .footer-box h2,
+  .footer-box h3 {
+    font-size: 26px !important;
+  }
+
+  .footer-box p {
+    font-size: 16px !important;
+    line-height: 1.7 !important;
+    word-break: break-word !important;
+  }
+
+  .social-icons {
+    justify-content: flex-start !important;
+  }
+
+  /* WHATSAPP */
+  .whatsapp-float {
+    width: 56px !important;
+    height: 56px !important;
+    right: 18px !important;
+    bottom: 18px !important;
+  }
+
+  .whatsapp-float img {
+    width: 30px !important;
+    height: 30px;
+  }
+}
