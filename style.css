@@ -4414,3 +4414,110 @@ body {
     letter-spacing: 3px !important;
   }
 }
+
+@media (max-width: 768px) {
+
+  .unit-section {
+    padding: 45px 22px !important;
+    background: #f5f5f5 !important;
+  }
+
+  .unit-highlight {
+    display: flex !important;
+    flex-direction: column !important;
+    background: #10231f !important;
+    min-height: auto !important;
+    height: auto !important;
+    padding: 22px !important;
+    border-radius: 0 !important;
+    gap: 25px !important;
+  }
+
+  .unit-main-image {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .unit-main-image img {
+    width: 100% !important;
+    height: 280px !important;
+    object-fit: cover !important;
+    border-radius: 18px !important;
+  }
+
+  .unit-main-content {
+    width: 100% !important;
+    padding: 0 !important;
+    color: white !important;
+    display: block !important;
+  }
+
+  .unit-label {
+    display: block !important;
+    color: #d6ad63 !important;
+    margin-bottom: 14px !important;
+    font-size: 12px !important;
+    letter-spacing: 3px !important;
+  }
+
+  .unit-main-content h3 {
+    display: block !important;
+    color: white !important;
+    font-size: 36px !important;
+    line-height: 1.1 !important;
+    margin-bottom: 15px !important;
+  }
+
+  .unit-main-content p {
+    display: block !important;
+    color: white !important;
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+    margin-bottom: 18px !important;
+  }
+
+  .unit-points {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .unit-points span {
+    color: white !important;
+    padding: 9px 14px !important;
+    font-size: 13px !important;
+  }
+
+  .unit-main-content h4 {
+    display: block !important;
+    color: #d6ad63 !important;
+    font-size: 30px !important;
+    margin-bottom: 18px !important;
+  }
+
+  .unit-main-btn,
+  .unit-detail-btn {
+    width: 100% !important;
+    display: block !important;
+    text-align: center !important;
+    margin-top: 12px !important;
+  }
+
+  .slider-controls {
+    position: static !important;
+    display: flex !important;
+    justify-content: center !important;
+    gap: 30px !important;
+    margin-top: 18px !important;
+  }
+
+  .slider-controls button {
+    width: 58px !important;
+    height: 58px !important;
+  }
+
+  .slide-dots {
+    display: none !important;
+  }
+}
