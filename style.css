@@ -4521,3 +4521,71 @@ body {
     display: none !important;
   }
 }
+
+@media (max-width: 768px) {
+
+  /* BOOKING FORM MOBILE */
+  .booking {
+    padding: 55px 20px !important;
+  }
+
+  .booking-container {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 30px 22px !important;
+    gap: 35px !important;
+  }
+
+  .booking-left,
+  .booking-right {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .booking-title {
+    font-size: 42px !important;
+    line-height: 1.15 !important;
+  }
+
+  #bookingForm input,
+  #bookingForm select,
+  #bookingForm button {
+    width: 100% !important;
+    height: 56px !important;
+    padding: 0 16px !important;
+    font-size: 16px !important;
+    color: #222 !important;
+    background: white !important;
+    border: 1px solid #ddd !important;
+    border-radius: 10px !important;
+    opacity: 1 !important;
+    appearance: auto !important;
+    -webkit-appearance: auto !important;
+  }
+
+  #bookingForm input[type="date"] {
+    color: #222 !important;
+    min-height: 56px !important;
+  }
+
+  #bookingForm button {
+    background: #a98d55 !important;
+    color: white !important;
+    border: none !important;
+    font-weight: 700 !important;
+  }
+
+  /* GAMBAR BOOKING BIAR GEDE KAYA DESKTOP */
+  .booking-building {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: cover !important;
+    border-radius: 22px !important;
+    display: block !important;
+  }
+
+  .booking-logo-row {
+    display: none !important;
+  }
+}
