@@ -3290,3 +3290,139 @@ body {
     font-size:22px;
     font-weight:800;
 }
+
+/* MOBILE RESPONSIVE FIX */
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .detail-navbar,
+    nav {
+        flex-direction: column !important;
+        height: auto !important;
+        padding: 25px 20px !important;
+        gap: 18px !important;
+    }
+
+    nav ul,
+    .detail-navbar ul {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 18px !important;
+    }
+
+    .detail-logo img,
+    nav img {
+        width: 95px !important;
+    }
+
+    .hero h1 {
+        font-size: 34px !important;
+        line-height: 1.15 !important;
+    }
+
+    .about-wrapper,
+    .unit-highlight,
+    .booking-container,
+    .detail-overview,
+    .detail-content,
+    .unit-info,
+    .room-detail,
+    .detail-gallery {
+        display: flex !important;
+        flex-direction: column !important;
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+        gap: 30px !important;
+    }
+
+    .about-text,
+    .about-image,
+    .unit-main-image,
+    .unit-main-content,
+    .booking-left,
+    .booking-right,
+    .detail-text,
+    .detail-image {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .about-text h2,
+    .unit-main-content h3,
+    .detail-text h1,
+    .detail-text h2 {
+        font-size: 36px !important;
+        line-height: 1.15 !important;
+    }
+
+    .about-text p,
+    .unit-main-content p,
+    .detail-text p {
+        font-size: 15px !important;
+        line-height: 1.7 !important;
+    }
+
+    .about-image img,
+    .detail-image img,
+    .unit-main-image img {
+        width: 100% !important;
+        height: auto !important;
+        max-height: 360px !important;
+        object-fit: cover !important;
+    }
+
+    .about-info,
+    .facility-photo-grid,
+    .related-grid {
+        grid-template-columns: 1fr !important;
+        gap: 22px !important;
+    }
+
+    .feature-card,
+    .facility-photo-card,
+    .related-card {
+        width: 100% !important;
+        height: 300px !important;
+    }
+
+    .unit-main-content {
+        padding: 35px 24px !important;
+    }
+
+    .booking-title {
+        font-size: 38px !important;
+        line-height: 1.15 !important;
+    }
+
+    .booking-container {
+        padding: 30px 20px !important;
+    }
+
+    form input,
+    form select,
+    form button {
+        width: 100% !important;
+        font-size: 15px !important;
+    }
+
+    .booking-building {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .footer-container {
+        flex-direction: column !important;
+        gap: 35px !important;
+        text-align: left !important;
+    }
+
+    .whatsapp-float {
+        width: 55px !important;
+        height: 55px !important;
+        right: 18px !important;
+        bottom: 18px !important;
+    }
+}
