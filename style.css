@@ -4044,3 +4044,145 @@ body {
     height: 30px;
   }
 }
+
+/* ===== FORCE MOBILE FINAL: HOME + UNIT PAGES ===== */
+@media (max-width: 768px) {
+
+  html, body {
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  /* HOME: jangan desktop */
+  .about-wrapper,
+  .about-info,
+  .unit-highlight {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .about-text,
+  .about-image,
+  .unit-main-image,
+  .unit-main-content {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .about-info {
+    gap: 22px !important;
+  }
+
+  .feature-card {
+    width: 100% !important;
+    height: 260px !important;
+  }
+
+  .unit-highlight {
+    margin: 0 !important;
+  }
+
+  .unit-main-image img {
+    height: 330px !important;
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+
+  .unit-main-content {
+    padding: 35px 24px !important;
+  }
+
+  /* NAVBAR DETAIL/UNIT */
+  .detail-navbar {
+    padding: 22px 18px !important;
+  }
+
+  .detail-navbar ul {
+    gap: 14px !important;
+  }
+
+  .detail-navbar ul li a {
+    font-size: 14px !important;
+  }
+
+  .detail-logo img {
+    width: 95px !important;
+  }
+
+  /* HALAMAN STUDIO / ONE / TWO BEDROOM */
+  .unit-detail,
+  .unit-detail-section,
+  .detail-content,
+  .room-detail,
+  .room-content,
+  .detail-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: 1fr !important;
+    padding: 35px 22px !important;
+    gap: 28px !important;
+    overflow: hidden !important;
+  }
+
+  .detail-text,
+  .room-text,
+  .unit-text,
+  .detail-image,
+  .room-image,
+  .unit-image {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .detail-text h1,
+  .room-text h1,
+  .unit-text h1 {
+    font-size: 38px !important;
+    line-height: 1.15 !important;
+    margin-bottom: 18px !important;
+  }
+
+  .detail-text p,
+  .room-text p,
+  .unit-text p {
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+  }
+
+  .detail-image img,
+  .room-image img,
+  .unit-image img {
+    width: 100% !important;
+    height: 330px !important;
+    object-fit: cover !important;
+    border-radius: 18px !important;
+  }
+
+  .detail-hero h1 {
+    font-size: 46px !important;
+    line-height: 1.1 !important;
+  }
+
+  /* fasilitas biar ga mepet */
+  .facility-list,
+  .unit-facilities,
+  .facility-tags {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+  }
+
+  .facility-list span,
+  .unit-facilities span,
+  .facility-tags span {
+    font-size: 14px !important;
+    padding: 12px 18px !important;
+  }
+
+  .whatsapp-float {
+    right: 18px !important;
+    bottom: 18px !important;
+  }
+}
