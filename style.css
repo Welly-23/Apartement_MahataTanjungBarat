@@ -5729,3 +5729,19 @@ body {
         display:none;
     }
 }
+
+input[type="date"]{
+    color: #666 !important;
+    -webkit-text-fill-color: #666 !important;
+    appearance: auto !important;
+    -webkit-appearance: auto !important;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator{
+    opacity: 1 !important;
+    display: block !important;
+}
+
+input[type="date"]::-webkit-datetime-edit{
+    color: #666 !important;
+}
