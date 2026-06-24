@@ -5264,3 +5264,55 @@ body {
     padding-bottom: 80px !important;
   }
 }
+
+@media (max-width: 768px){
+
+  .unit-detail-layout,
+  .detail-layout,
+  .room-layout{
+      display:flex !important;
+      flex-direction:column !important;
+      gap:30px !important;
+  }
+
+  .unit-detail-text,
+  .detail-text,
+  .room-text{
+      width:100% !important;
+      max-width:100% !important;
+      order:1 !important;
+  }
+
+  .unit-detail-image,
+  .detail-image,
+  .room-image{
+      width:100% !important;
+      max-width:100% !important;
+      order:2 !important;
+  }
+
+  .unit-detail-image img,
+  .detail-image img,
+  .room-image img{
+      width:100% !important;
+      height:auto !important;
+      object-fit:contain !important;
+      display:block !important;
+      border-radius:20px !important;
+  }
+
+  .unit-detail-text h1,
+  .detail-text h1,
+  .room-text h1{
+      font-size:48px !important;
+      line-height:1.15 !important;
+  }
+
+  .unit-detail-text p,
+  .detail-text p,
+  .room-text p{
+      font-size:17px !important;
+      line-height:1.8 !important;
+  }
+
+}
