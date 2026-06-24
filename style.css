@@ -4612,7 +4612,9 @@ body {
 }
 
 .one-hero{
-    background-image: url("One Bedroom/One-Bedroom-5.jpg");
+    background:
+    linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+    url("One Bedroom/One-Bedroom-5.jpg") center/cover no-repeat !important;
 }
 
 .two-hero{
