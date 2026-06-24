@@ -63,9 +63,9 @@
 
     </div>
 
-   <div class="detail-gallery">
+<div class="detail-gallery">
     <button onclick="prevOneImage()">‹</button>
-    <img id="oneMainImage" src="One Bedroom/One-Bedroom-5.jpg" alt="One Bedroom">
+    <img id="oneMainImage" src="One Bedroom/One-Bedroom-1.jpg" alt="One Bedroom">
     <button onclick="nextOneImage()">›</button>
 </div>
 </section>
@@ -239,19 +239,19 @@ let currentOne = 0;
 const oneImages = [
   "One Bedroom/One-Bedroom-1.jpg",
   "One Bedroom/One-Bedroom-3.jpg",
-  "One Bedroom/One-Bedroom-5.jpg",
+  "One Bedroom/One-Bedroom-5.jpg"
 ];
 
 function showOneImage() {
-  document.getElementById("oneImage").src = oneImages[currentOne];
+  document.getElementById("oneMainImage").src = oneImages[currentOne];
 }
 
-function nextRoomImage() {
+function nextOneImage() {
   currentOne = (currentOne + 1) % oneImages.length;
   showOneImage();
 }
 
-function prevRoomImage() {
+function prevOneImage() {
   currentOne = (currentOne - 1 + oneImages.length) % oneImages.length;
   showOneImage();
 }
