@@ -5572,3 +5572,21 @@ body {
     right: 12px !important;
   }
 }
+
+.gallery-content {
+  display: none !important;
+}
+
+.gallery-content.active {
+  display: block !important;
+}
+
+#tour.active .tour-layout {
+  display: flex !important;
+}
+
+#tour.active video {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+}

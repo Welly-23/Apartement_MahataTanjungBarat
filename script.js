@@ -194,20 +194,23 @@ function prevRoomImage(room) {
     showRoomImage(room);
 }
 
-function showGallery(id) {
-    const contents = document.querySelectorAll(".gallery-content");
-    const buttons = document.querySelectorAll(".tab-btn");
+function showGallery(type) {
+  const floor = document.getElementById("floor");
+  const tour = document.getElementById("tour");
+  const buttons = document.querySelectorAll(".tab-btn");
 
-    contents.forEach(content => {
-        content.classList.remove("active");
-    });
+  floor.classList.remove("active");
+  tour.classList.remove("active");
 
-    buttons.forEach(button => {
-        button.classList.remove("active");
-    });
+  document.getElementById(type).classList.add("active");
 
-    document.getElementById(id).classList.add("active");
-    event.target.classList.add("active");
+  buttons.forEach(btn => btn.classList.remove("active"));
+
+  if (type === "floor") {
+    buttons[0].classList.add("active");
+  } else {
+    buttons[1].classList.add("active");
+  }
 }
 
 document.querySelector('.hero-main-btn').addEventListener('click', function(e){
