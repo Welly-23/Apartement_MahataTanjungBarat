@@ -5415,10 +5415,8 @@ body {
 @media (max-width: 768px) {
 
   .detail-info h1 {
-    font-size: 34px !important;
-    line-height: 1.15 !important;
-    margin-bottom: 20px !important;
-    word-break: normal !important;
+      font-size: 3rem !important;
+      line-height: 1.1 !important;
   }
 
   .detail-info {
