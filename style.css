@@ -4612,9 +4612,7 @@ body {
 }
 
 .one-hero{
-    background:
-    linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-    url("One Bedroom/One-Bedroom-5.jpg") center/cover no-repeat !important;
+    background-image: url("One Bedroom/One-Bedroom-5.jpg");
 }
 
 .two-hero{
@@ -4657,7 +4655,7 @@ body {
 .one-cta{
     background:
     linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
-    url("One Bedroom/One-bedroom-3.jpg");
+    url("One Bedroom/One-Bedroom-3.jpg");
     background-size: cover;
     background-position: center;
 }
