@@ -5114,3 +5114,30 @@ body {
     border-radius: 18px !important;
   }
 }
+
+@media (max-width: 768px){
+
+    .tour-layout{
+        display:flex !important;
+        flex-direction:column !important;
+        gap:25px !important;
+    }
+
+    .tour-layout .tour-text{
+        width:100% !important;
+        text-align:center !important;
+    }
+
+    .tour-layout .tour-video{
+        width:100% !important;
+        order:3 !important;
+    }
+
+    .tour-layout .tour-video video{
+        width:100% !important;
+        height:auto !important;
+        display:block !important;
+        border-radius:20px;
+    }
+
+}
