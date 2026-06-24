@@ -64,9 +64,9 @@
     </div>
 
    <div class="detail-gallery">
-    <button onclick="prevRoomImage('one')">‹</button>
-    <img id="oneImage" src="One Bedroom/One-bedroom-5.jpg" alt="One Bedroom">
-    <button onclick="nextRoomImage('one')">›</button>
+    <button onclick="prevOneImage()">‹</button>
+    <img id="oneMainImage" src="One Bedroom/One-Bedroom-5.jpg" alt="One Bedroom">
+    <button onclick="nextOneImage()">›</button>
 </div>
 </section>
 
@@ -144,11 +144,11 @@
 
     <div class="related-grid">
 
-        <div class="related-card">
-            <img src="Studio Room/Studio-room-2.jpg" alt="Studio Room">
+  <div class="related-card">
+    <img src="Studio Room/Studio-room-2.jpg" alt="Studio Room">
 
-            <div class="related-content">
-                <h3>Studio Room</h3>
+    <div class="related-content">
+        <h3>Studio Room</h3>
                 <p>
                     Compact and modern living space designed for comfort,
                     practicality, and daily convenience.
@@ -158,11 +158,11 @@
             </div>
         </div>
 
-        <div class="related-card">
-            <img id="oneImage" src="One Bedroom/One-Bedroom-5.jpg" alt="One Bedroom">
+<div class="related-card">
+    <img src="Two Bedroom/Two-bedroom-5.jpg" alt="Two Bedroom">
 
-            <div class="related-content">
-                <h3>Two Bedroom</h3>
+    <div class="related-content">
+        <h3>Two Bedroom</h3>
                 <p>
                     Spacious living designed for families who value
                     comfort and functionality.
@@ -239,7 +239,7 @@ let currentOne = 0;
 const oneImages = [
   "One Bedroom/One-Bedroom-1.jpg",
   "One Bedroom/One-Bedroom-3.jpg",
-  "One Bedroom/One-Bedroom-5.jpg"
+  "One Bedroom/One-Bedroom-5.jpg",
 ];
 
 function showOneImage() {
