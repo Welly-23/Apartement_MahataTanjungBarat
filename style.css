@@ -5529,3 +5529,46 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .detail-gallery {
+    display: block !important;
+    width: 100% !important;
+    margin-top: 30px !important;
+    position: relative !important;
+    overflow: hidden !important;
+    border-radius: 22px !important;
+  }
+
+  .detail-gallery img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    border-radius: 22px !important;
+  }
+
+  .detail-gallery button {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    width: 42px !important;
+    height: 42px !important;
+    border: none !important;
+    border-radius: 50% !important;
+    background: rgba(255,255,255,0.9) !important;
+    color: #111 !important;
+    font-size: 34px !important;
+    z-index: 10 !important;
+  }
+
+  .detail-gallery button:first-child {
+    left: 12px !important;
+  }
+
+  .detail-gallery button:last-child {
+    right: 12px !important;
+  }
+}
