@@ -5410,3 +5410,121 @@ body {
     border-radius: 0 !important;
   }
 }
+
+/* FIX DETAIL UNIT HP - STUDIO / ONE / TWO */
+@media (max-width: 768px) {
+
+  .detail-page {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 70px 24px 50px !important;
+    margin: 0 !important;
+    gap: 35px !important;
+    background: #fff !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .detail-info {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .detail-info span {
+    display: block !important;
+    font-size: 14px !important;
+    letter-spacing: 6px !important;
+    margin-bottom: 18px !important;
+  }
+
+  .detail-info h1 {
+    font-size: 44px !important;
+    line-height: 1.08 !important;
+    margin-bottom: 24px !important;
+  }
+
+  .detail-info p {
+    font-size: 17px !important;
+    line-height: 1.8 !important;
+    margin-bottom: 34px !important;
+  }
+
+  .detail-facilities {
+    width: 100% !important;
+  }
+
+  .detail-facilities h3 {
+    font-size: 26px !important;
+    margin-bottom: 22px !important;
+  }
+
+  .facilities-list {
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 14px !important;
+    justify-content: flex-start !important;
+  }
+
+  .facilities-list span {
+    width: auto !important;
+    min-width: auto !important;
+    max-width: 100% !important;
+    padding: 13px 18px !important;
+    font-size: 14px !important;
+    letter-spacing: 3px !important;
+    white-space: nowrap !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+
+  .detail-gallery {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+    overflow: hidden !important;
+    border-radius: 22px !important;
+    order: 2 !important;
+  }
+
+  .detail-gallery img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    display: block !important;
+    border-radius: 22px !important;
+  }
+
+  .detail-gallery button {
+    width: 46px !important;
+    height: 46px !important;
+    min-width: 46px !important;
+    padding: 0 !important;
+    font-size: 34px !important;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    z-index: 5 !important;
+    background: rgba(255,255,255,0.9) !important;
+    color: #111 !important;
+    border: none !important;
+  }
+
+  .detail-gallery button:first-child {
+    left: 10px !important;
+  }
+
+  .detail-gallery button:last-child {
+    right: 10px !important;
+  }
+}
