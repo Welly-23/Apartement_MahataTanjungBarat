@@ -5659,3 +5659,20 @@ body {
     right: 14px !important;
   }
 }
+
+@media (max-width: 768px){
+
+    .detail-navbar{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .detail-navbar ul{
+        gap: 12px;
+        flex-wrap: nowrap;
+    }
+
+    .detail-navbar ul li a{
+        font-size: 13px;
+    }
+}
