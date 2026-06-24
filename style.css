@@ -5183,3 +5183,22 @@ body {
     width: 100% !important;
   }
 }
+
+@media (max-width: 768px) {
+  #tour.active .tour-video {
+    width: 100% !important;
+    height: auto !important;
+    background: #000 !important;
+    border-radius: 22px !important;
+    overflow: hidden !important;
+  }
+
+  #tour.active .tour-video video {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    display: block !important;
+    border-radius: 22px !important;
+  }
+}
