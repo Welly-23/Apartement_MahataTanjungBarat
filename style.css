@@ -5063,3 +5063,54 @@ body {
     z-index: 999 !important;
   }
 }
+
+/* FIX DETAIL UNIT MOBILE: FLOOR PLAN & VIRTUAL TOUR */
+@media (max-width: 768px) {
+
+  /* Floor plan cukup gambar aja, text disembunyikan */
+  .floor-plan-content .gallery-text,
+  .floor-plan-content .text-left,
+  .floor-plan-content .text-right {
+    display: none !important;
+  }
+
+  .floor-plan-content img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    border-radius: 20px !important;
+  }
+
+  /* Virtual tour: text dulu baru video */
+  .virtual-tour-content,
+  .virtual-wrapper,
+  .tour-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .virtual-tour-content .gallery-text,
+  .virtual-tour-content .text-left,
+  .virtual-tour-content .text-right,
+  .virtual-tour-content .tour-text {
+    display: block !important;
+    width: 100% !important;
+    order: 1 !important;
+    text-align: center !important;
+    margin-bottom: 25px !important;
+  }
+
+  .virtual-tour-content video,
+  .virtual-tour-content iframe,
+  .virtual-tour-content .virtual-video,
+  .virtual-tour-content .tour-video {
+    display: block !important;
+    width: 100% !important;
+    height: 260px !important;
+    order: 2 !important;
+    margin-top: 10px !important;
+    object-fit: cover !important;
+    border-radius: 18px !important;
+  }
+}
