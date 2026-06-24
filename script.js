@@ -53,7 +53,7 @@ const units = [
         bathroom: "Balcony",
         price: "Mulai Rp 1 M",
         image: "One Bedroom/One-bedroom-3.jpg",
-         link: "One-Bedroom.html"
+        link: "One-Bedroom.html"
     },
     {
         title: "Two Bedroom",
