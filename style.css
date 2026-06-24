@@ -5316,3 +5316,97 @@ body {
   }
 
 }
+
+@media (max-width: 768px) {
+
+  .detail-unit,
+  .unit-detail,
+  .detail-intro {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 80px 28px 45px !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    background: #fff !important;
+    box-shadow: none !important;
+  }
+
+  .detail-container,
+  .unit-detail-container,
+  .detail-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 35px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .detail-left,
+  .unit-detail-left,
+  .detail-text {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    text-align: left !important;
+  }
+
+  .detail-left h1,
+  .unit-detail-left h1,
+  .detail-text h1 {
+    font-size: 44px !important;
+    line-height: 1.05 !important;
+    margin-bottom: 24px !important;
+  }
+
+  .detail-left p,
+  .unit-detail-left p,
+  .detail-text p {
+    font-size: 17px !important;
+    line-height: 1.75 !important;
+    margin-bottom: 32px !important;
+  }
+
+  .facilities,
+  .facility-list,
+  .unit-facilities {
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 14px !important;
+    justify-content: flex-start !important;
+  }
+
+  .facility-item,
+  .facility-badge,
+  .unit-facilities span {
+    width: auto !important;
+    min-width: unset !important;
+    max-width: 100% !important;
+    padding: 13px 18px !important;
+    font-size: 15px !important;
+    letter-spacing: 3px !important;
+    white-space: nowrap !important;
+  }
+
+  .detail-right,
+  .unit-detail-right,
+  .detail-image {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin-top: 20px !important;
+  }
+
+  .detail-right img,
+  .unit-detail-right img,
+  .detail-image img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    display: block !important;
+    border-radius: 0 !important;
+  }
+}
