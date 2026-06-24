@@ -5414,9 +5414,17 @@ body {
 /* FIX DETAIL UNIT HP - STUDIO / ONE / TWO */
 @media (max-width: 768px) {
 
-  .detail-info h1 {
-      font-size: 3rem !important;
-      line-height: 1.1 !important;
+  .detail-page {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 70px 24px 50px !important;
+    margin: 0 !important;
+    gap: 35px !important;
+    background: #fff !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
   }
 
   .detail-info {
@@ -5521,11 +5529,3 @@ body {
   }
 }
 
-.detail-info {
-    padding: 0 10px !important;
-}
-
-.detail-info p {
-    font-size: 16px !important;
-    line-height: 1.8 !important;
-}
