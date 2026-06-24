@@ -5141,3 +5141,45 @@ body {
     }
 
 }
+
+/* default: virtual tour disembunyiin dulu */
+#tour {
+  display: none;
+}
+
+/* kalau tombol virtual tour diklik, JS harus kasih class active */
+.gallery-content {
+  display: none;
+}
+
+.gallery-content.active {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .gallery-content.active {
+    display: block !important;
+  }
+
+  #floor:not(.active),
+  #tour:not(.active) {
+    display: none !important;
+  }
+
+  #tour.active .tour-layout {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 28px !important;
+  }
+
+  #tour.active .tour-text {
+    display: block !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  #tour.active .tour-video {
+    display: block !important;
+    width: 100% !important;
+  }
+}
