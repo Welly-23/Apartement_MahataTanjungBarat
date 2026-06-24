@@ -5590,3 +5590,72 @@ body {
   width: 100% !important;
   height: auto !important;
 }
+
+/* FIX ONE BEDROOM DETAIL IMAGE + SLIDER */
+@media (max-width: 768px) {
+  .detail-page {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    padding: 60px 24px !important;
+    gap: 35px !important;
+  }
+
+  .detail-info {
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  .detail-info h1 {
+    font-size: 34px !important;
+    line-height: 1.15 !important;
+  }
+
+  .detail-gallery {
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    overflow: hidden !important;
+    border-radius: 24px !important;
+  }
+
+  .detail-gallery img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    border-radius: 24px !important;
+  }
+
+  .detail-gallery button {
+    width: 48px !important;
+    max-width: 48px !important;
+    height: 48px !important;
+    padding: 0 !important;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    z-index: 99 !important;
+    border-radius: 50% !important;
+    background: rgba(255,255,255,0.9) !important;
+    color: #111 !important;
+    font-size: 34px !important;
+    line-height: 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .detail-gallery button:first-child {
+    left: 14px !important;
+  }
+
+  .detail-gallery button:last-child {
+    right: 14px !important;
+  }
+}
