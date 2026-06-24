@@ -5660,27 +5660,3 @@ body {
   }
 }
 
-@media (max-width: 768px){
-
-    .detail-navbar{
-        padding: 20px 15px;
-    }
-
-    .detail-navbar ul{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-        flex-wrap: nowrap; /* jangan turun ke bawah */
-    }
-
-    .detail-navbar ul li a{
-        font-size: 14px;
-        white-space: nowrap;
-    }
-
-    .detail-logo img{
-        width: 100px;
-    }
-
-}
